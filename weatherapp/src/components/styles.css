@@ -1,4 +1,11 @@
-@media (max-height: 64em){
+
+.locationListCont{
+    height: 90vh;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 64em){
     .locationListCont{
         max-height: 30vh;
         overflow: auto;
