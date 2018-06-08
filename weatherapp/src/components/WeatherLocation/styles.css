@@ -1,0 +1,29 @@
+.weatherLocationCont {
+    margin: 10px 0px;
+    padding: 25px;
+    width: calc(100% -20px);
+    min-width: 400px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 19px -13px rgba(0,0,0,0.75);
+}
+
+.locationCont {
+    width: 400px;
+    height: 35px;
+    text-align: left;
+    padding-left: 10px;
+    color:#888;
+    line-height: 35px;
+}
+
+.locationCont h1 {
+    margin: 0px;
+}
+
+.forescastExtendedCont h2 {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
