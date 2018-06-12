@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "convert-units": "^2.3.4",
+    "lodash.topairs": "^4.3.0",
     "material-ui": "^0.20.1",
     "moment": "^2.22.2",
     "prop-types": "^15.6.1",
@@ -13,7 +14,9 @@
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.4",
     "react-weathericons": "^1.0.4",
-    "redux": "^4.0.0"
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -5,7 +5,7 @@ import Paper from 'material-ui/Paper';
 import AppBar from 'material-ui/AppBar'
 import './App.css';
 import LocationListContainer from './containers/LocationListContainer';
-import ForecastExtenderContainer from './containers/ForecastExtenderContainer';
+import ForecastExtendedContainer from './containers/ForecastExtendedContainer';
 
 const cities = [
   "Madrid,es",
@@ -31,7 +31,7 @@ class App extends Component {
             <Col xs={12} md={6}>
               <Paper zDepth={4}>
                 <div className="detail">
-                  <ForecastExtenderContainer/>             
+                  <ForecastExtendedContainer/>             
                 </div>
               </Paper>
             </Col>
