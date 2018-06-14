@@ -8,13 +8,16 @@ const CustomerList = ({ customers, urlPath }) => {
             <div className="customer-list">
             {
                 customers.map(c => {
-                    <CustomerListItem
-                        key={c.dni}
-                        name={c.name}
-                        editAction={'Editar'}
-                        delAction={'Eliminar'}
-                        urlPath={urlPath}
-                    ></CustomerListItem>
+                    return(
+                        <CustomerListItem
+                            key={c.dni}
+                            name={c.name}
+                            dni={c.dni}
+                            editAction={'Editar'}
+                            delAction={'Eliminar'}
+                            urlPath={urlPath}
+                        ></CustomerListItem>
+                    )
                 })
             }
             </div>
