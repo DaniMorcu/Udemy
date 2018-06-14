@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "customers": [
+    {
+        "dni": "53505050A",
+        "name": "Antonia",
+        "age": 36
+    },
+    {
+        "dni": "53505050B",
+        "name": "Sonia",
+        "age": 15
+    },
+    {
+        "dni": "53505050C",
+        "name": "Lina",
+        "age": 54
+    },
+    {
+        "dni": "53505050D",
+        "name": "Jose",
+        "age": 25
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
