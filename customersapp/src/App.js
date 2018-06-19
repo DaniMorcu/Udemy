@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import HomeContainer from './containers/HomeContainer';
+import CustomerContainer from './containers/CustomerContainer';
 import CustomersContainer from './containers/CustomersContainer';
 
 class App extends Component {
 
   renderCustomerContainer = () => <h1>Customer</h1>
-  renderCustomerListContainer = () => <h1>Customer List Container</h1>
-  renderCustomerNewContainer = () => <h1>Customer New Container</h1>
-
+  renderCustomerNewContainer = () => <h1>CUstomer new</h1>
   render() {
     return (
       <Router>
@@ -18,7 +17,7 @@ class App extends Component {
           <Route exact path="/customers" component={CustomersContainer}></Route>
           <Switch>
             <Route path="/customers/new" component={this.renderCustomerNewContainer}></Route>
-            <Route path="/customers/:dni" component={this.renderCustomerContainer}></Route>
+            <Route path="/customers/:dni" render={props => <CustomerContainer dni={props.match.params.dni} />} />
           </Switch>
         </div>
       </Router>

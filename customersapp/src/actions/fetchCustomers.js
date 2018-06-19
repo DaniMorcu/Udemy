@@ -1,20 +1,6 @@
 import { FETCH_CUSTOMERS } from './../constants';
 import { createAction } from 'redux-actions';
+import { getApi } from './../api';
+import { urlCustomers } from './../api/urls';
 
-// Este objeto se lo pasaremos en el payload
-const url = 'http://localhost:3001/customers';
-
-
-
-
-
-
-
-
-
-
-
-
-const apiFetchCustomers = () => fetch(url).then(c => c.json());
-
-export const fetchCustomers = createAction(FETCH_CUSTOMERS, () => apiFetchCustomers);
+export const fetchCustomers = createAction(FETCH_CUSTOMERS, getApi(urlCustomers));
