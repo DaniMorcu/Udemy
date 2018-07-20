@@ -8,24 +8,28 @@
   ],
   "customers": [
     {
-        "dni": "53505050A",
-        "name": "Antonia",
-        "age": 36
+      "id": "53505050",
+      "dni": "53505052",
+      "name": "Marta",
+      "age": 32
     },
     {
-        "dni": "53505050B",
-        "name": "Sonia",
-        "age": 15
+      "id": "53505051",
+      "dni": "53505052",
+      "name": "Pedro",
+      "age": 54
     },
     {
-        "dni": "53505050C",
-        "name": "Lina",
-        "age": 54
+      "id": "53505052",
+      "dni": "53505052",
+      "name": "Lina",
+      "age": 54
     },
     {
-        "dni": "53505050D",
-        "name": "Jose",
-        "age": 25
+      "id": "53505053",
+      "dni": "53505053",
+      "name": "Jose",
+      "age": 25
     }
   ],
   "profile": {
