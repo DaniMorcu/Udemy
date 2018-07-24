@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CustomerActions from './CustomerActions';
+import { accessControl } from './../helpers/accessControl';
+import { CUSTOMER_VIEW } from './../constants/permissions';
+
 
 const CustomerData = ({ id, name, age, dni, onBack, isDeleteAllow, onDelete }) => {
     return (
@@ -30,5 +33,4 @@ CustomerData.propTypes = {
     isDeleteAllow: PropTypes.bool,
     onDelete: PropTypes.func,
 };
-
-export default CustomerData;
+export default accessControl([CUSTOMER_VIEW])(CustomerData);

@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { reduxForm, Field } from 'redux-form';
 import { setPropsAsInitial } from './../helpers/setPropsAsInitial';
+import { accessControl } from './../helpers/accessControl';
 import CustomerActions from './../components/CustomerActions';
 import { Prompt } from 'react-router-dom';
+import { CUSTOMER_EDIT } from './../constants/permissions';
 
 const isNumber = value => (
     isNaN(Number(value)) && "El campo debe ser un número"
@@ -108,4 +110,6 @@ const customereditForm = reduxForm({
     validate 
 }) (CustomerEdit);
 
-export default setPropsAsInitial(customereditForm);
+// envolvemos el componente con nuestro helper y le indicamos el tipo de permiso
+// que necesita para visualizarlo
+export default accessControl([CUSTOMER_EDIT])(setPropsAsInitial(customereditForm));
