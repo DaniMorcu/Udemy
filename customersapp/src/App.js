@@ -5,16 +5,15 @@ import HomeContainer from './containers/HomeContainer';
 import CustomerContainer from './containers/CustomerContainer';
 import CustomersContainer from './containers/CustomersContainer';
 import NewCustomerContainer from './containers/NewCustomerContainer';
-
+import LoginContainer from './containers/LoginContainer';
 class App extends Component {
 
-  renderCustomerContainer = () => <h1>Customer</h1>
-  renderCustomerNewContainer = () => <h1>CUstomer new</h1>
   render() {
     return (
       <Router>
         <div>
           <Route exact path="/" component={HomeContainer}></Route>
+          <Route path="/login" component={LoginContainer}></Route>
           <Route exact path="/customers" component={CustomersContainer}></Route>
           <Switch>
             <Route path="/customers/new" component={NewCustomerContainer}></Route>

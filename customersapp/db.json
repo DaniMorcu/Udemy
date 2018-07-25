@@ -29,5 +29,19 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "permissions": ["CUSTOMER_LIST", "CUSTOMER_VIEW", "CUSTOMER_EDIT"]
+    },
+    {
+      "id": 2,
+      "username": "guest",
+      "password": "guest",
+      "permissions": ["CUSTOMER_VIEW"]
+    }
+  ]
 }
