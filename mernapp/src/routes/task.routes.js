@@ -31,12 +31,12 @@ router.put('/:id', async (req, res) => {
     console.log(req.params.id);
     await Task.findByIdAndUpdate(req.params.id, newTask)
     res.json({status: 'Task updated'});
-})
+});
 
 // DELETE
 router.delete('/:id', async (req, res) => {
     await Task.findByIdAndRemove(req.params.id);
     res.json({status: 'Task removed'});
-})
+});
 
 module.exports = router;
